@@ -4,6 +4,7 @@
 <head>
     <title>Lets get started</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/login_register.css') }}"> 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/team_css/team.css') }}"> 
     <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/bg_video_css/background.css') }}"> -->
 </head>
 
@@ -48,7 +49,7 @@
           </div>
       </div>
   </div>
-  
+
   <div class="cont_back_info">
      <div class="cont_img_back_grey">
      <img src="{{ asset('image/cons1.jpg') }}"/>
@@ -82,26 +83,16 @@
             </div>
         </div>
     </div>
+
+    <div class="made-with-love">
+        "Made with"
+        <i>♥</i>
+        "by"
+        <a target="_blank" href="https://web.facebook.com/mcfaith">Team Pila</a>
+    </div>
 </div>
 
-<script src="{{ asset('js/login_register.js') }}"></script>
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-    
+<script src="{{ asset('js/login_register.js') }}"></script>    
 </body>
 
 </html>

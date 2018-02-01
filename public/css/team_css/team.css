@@ -1,0 +1,20 @@
+.made-with-love {
+    margin-top: 200px;
+    padding: 100px;
+    clear: left;
+    text-align: center;
+    font-size: 12px;
+    font-family: arial;
+    color: #fff;
+}
+.made-with-love i {
+    font-style: normal;
+    color: #F50057;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+.made-with-love a {
+    color: #fff;
+    text-decoration: none;
+}
