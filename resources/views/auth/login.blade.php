@@ -5,10 +5,8 @@
     <title>Lets get started</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/login_register.css') }}"> 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/team_css/team.css') }}"> 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/font_awesome/fontawesome.min.css') }}"> 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/font_awesome/fontawesome.css') }}"> 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/font_awesome/fontawesome-all.min.css') }}"> 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/font_awesome/fontawesome-all.css') }}"> 
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+    <script src="{{ asset('js/fontawesome.js') }}"></script>   
     <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/bg_video_css/background.css') }}"> -->
 </head>
 
@@ -66,7 +64,7 @@
  </div>
 
  <div class="cont_form_login">
-    <a href="#" onclick="ocultar_login_sign_up()" ><i class="fa-window-close"></i></a>
+    <a href="#" onclick="ocultar_login_sign_up()" ><i class="far fa-times-circle"></i></a>
     <h2>LOGIN</h2>
     <input type="text" placeholder="Email" />
     <input type="password" placeholder="Password" />
@@ -74,7 +72,7 @@
 </div>
 
 <div class="cont_form_sign_up">
-    <a href="#" onclick="ocultar_login_sign_up()"><i class="fa-window-close"></i></a>
+    <a href="#" onclick="ocultar_login_sign_up()"><i class="far fa-times-circle"></i></a>
     <h2>SIGN UP</h2>
     <input type="text" placeholder="Email" />
     <input type="text" placeholder="User" />
