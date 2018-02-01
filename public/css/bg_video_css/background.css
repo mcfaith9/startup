@@ -1,0 +1,25 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+.tc-videobackground {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.tc-videobackground video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
