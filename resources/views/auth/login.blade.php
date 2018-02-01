@@ -35,7 +35,7 @@
             <div class="cont_ba_opcitiy">
 
                 <h2>LOGIN</h2>  
-                <p>Welcome back. asdasdasdasasdasdasdasd</p> 
+                <p style="padding-top: 20px">Welcome back.</p> 
                 <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
             </div>
         </div>
@@ -43,13 +43,12 @@
             <div class="cont_ba_opcitiy">
               <h2>SIGN UP</h2>
 
-              <p>Lets get started its free. sdasdasdasdasdasdasdasdas</p>
+              <p style="padding-top: 20px">Lets get started its free.</p>
               <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
           </div>
       </div>
   </div>
-
-
+  
   <div class="cont_back_info">
      <div class="cont_img_back_grey">
      <img src="{{ asset('image/cons1.jpg') }}"/>

@@ -32,8 +32,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', end
 .cont_login {
   position: relative;
   width: 640px;
-left: 50%;
-margin-left: -320px;
+  left: 50%;
+  margin-left: -320px;
+  margin-top: 62px;
   
 }
 
