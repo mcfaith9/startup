@@ -8,16 +8,26 @@
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
     <script src="{{ asset('js/fontawesome.js') }}"></script>   
     <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/bg_video_css/background.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/slideshow/style_slideshow.css') }}">
 </head>
 
 <style>    
     html {
         overflow-y: hidden;
     }    
-    .mySlides {display:none;}
 </style>
 
-<body style="background: url('image/cons1.jpg') fixed;">
+<body id="page">
+<!-- Slideshow -->
+<ul class="cb-slideshow">
+    <li><span>Image 01</span></li>
+    <li><span>Image 03</span></li>
+    <li><span>Image 04</span></li>
+    <li><span>Image 05</span></li>
+    <li><span>Image 06</span></li>
+    <li><span>Image 06</span></li>
+</ul>
+
 <!-- <div class="crossfade">
   <figure></figure>
   <figure></figure>
@@ -54,13 +64,13 @@
 
   <div class="cont_back_info">
      <div class="cont_img_back_grey">
-     <img src="{{ asset('image/cons1.jpg') }}"/>
+     <img src="{{ asset('image/login_form.jpg') }}"/>
      </div>
   </div>
 
  <div class="cont_forms" >
     <div class="cont_img_back_">
-     <img src="{{ asset('image/cons1.jpg') }}"/>
+     <img src="{{ asset('image/login_form.jpg') }}"/>
  </div>
 
  <div class="cont_form_login">
@@ -95,6 +105,9 @@
 </div>
 
 <script src="{{ asset('js/login_register.js') }}"></script>    
+<script src="{{ asset('js/slideshow_js/modernizr.custom.86080.js') }}"></script> 
+
+<!-- Credits  -->
 </body>
 
 </html>
