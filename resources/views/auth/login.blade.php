@@ -73,6 +73,8 @@
      <img src="{{ asset('image/login_form.jpg') }}"/>
  </div>
 
+<form method="POST" action="{{ url('/login') }}">
+    {{ csrf_field() }}
  <div class="cont_form_login">
     <a href="#" onclick="ocultar_login_sign_up()" ><i class="far fa-times-circle"></i></a>    
 
@@ -81,8 +83,19 @@
        </div> 
 
     <h2>LOGIN</h2>
-    <input type="text" placeholder="Email" />
-    <input type="password" placeholder="Password" />
+    
+    <input class="form-group{{ $errors->has('username') ? ' has-error' : '' }}" type="text" name="username" placeholder="Username" autofocus/>
+    @if ($errors->has('username'))
+        <span class="help-block">
+            <strong>{{ $errors->first('username') }}</strong>
+        </span>
+    @endif
+    <input class="form-group{{ $errors->has('password') ? ' has-error' : '' }}" type="password" name="password" placeholder="Password" autofocus/>
+    @if ($errors->has('password'))
+        <span class="help-block">
+            <strong>{{ $errors->first('password') }}</strong>
+        </span>
+    @endif
     
     <div class="field">
         <label class="checkbox">
@@ -92,19 +105,43 @@
         </label>
     </div>
 
-    <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+    <button class="btn_login" onclick="cambiar_login()">LOGIN</button>    
 </div>
+</form>
 
+<form method="POST" action="{{ url('/register') }}">
+{{ csrf_field() }}
 <div class="cont_form_sign_up">
     <a href="#" onclick="ocultar_login_sign_up()"><i class="far fa-times-circle"></i></a>
-    <h2>SIGN UP</h2>
-    <input type="text" placeholder="Email" />
-    <input type="text" placeholder="User" />
-    <input type="password" placeholder="Password" />
-    <input type="password" placeholder="Confirm Password" />
-    <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
-
+    <h2>SIGN UP</h2>    
+    
+    <input class="form-group{{ $errors->has('name') ? ' has-error' : '' }}" type="text" name="email" placeholder="Email" autofocus/>
+    @if ($errors->has('email'))
+        <span class="help-block">
+            <strong>{{ $errors->first('email') }}</strong>
+        </span>
+    @endif
+    <input class="form-group{{ $errors->has('name') ? ' has-error' : '' }}" type="text" name="name" placeholder="User" />
+    @if ($errors->has('name'))
+        <span class="help-block">
+            <strong>{{ $errors->first('name') }}</strong>
+        </span>
+    @endif
+    <input class="form-group{{ $errors->has('password') ? ' has-error' : '' }}" type="password" name="password" placeholder="Password" />
+    @if ($errors->has('password'))
+        <span class="help-block">
+            <strong>{{ $errors->first('password') }}</strong>
+        </span>
+    @endif
+    <input class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}" type="password" name="password_confirmation" placeholder="Confirm Password" />
+    @if ($errors->has('password_confirmation'))
+        <span class="help-block">
+            <strong>{{ $errors->first('password_confirmation') }}</strong>
+        </span>
+    @endif
+    <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>  
 </div>
+</form>
 
             </div>
         </div>
