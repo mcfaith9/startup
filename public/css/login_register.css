@@ -13,7 +13,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('{{asset("image/cons1.jpg")}}');
 /*background: linear-gradient(to bottom left, #00ff99 -10%, #ff66ff 101%);*/
 /*background: #cfd8dc; 
 background: -moz-linear-gradient(-45deg,  #cfd8dc 0%, #607d8b 100%, #b0bec5 100%); 
@@ -315,8 +314,10 @@ text-align: left;
 margin-left: 10px;
 margin-top: 20px;
   width: 260px;
-border: none;
     color: #757575;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
 }
 
 .cont_form_sign_up > h2 {
@@ -331,13 +332,15 @@ font-weight: 400;
 margin-left: 10px;
 margin-top: 20px;
   width: 260px;
-border: none;
 text-align: left;
   color: #757575;
+      background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
 }
 
 .cont_form_login > h2 {
-margin-top: 110px; 
+margin-top: 20px; 
 font-weight: 400;
   color: #757575;
 }
@@ -347,4 +350,34 @@ font-weight: 400;
     float: left;
     margin: 10px;
 margin-left: 7px;
+}
+
+/* Checkbox */
+.field:not(:last-child) {
+    margin-top: 10px;
+}
+.checkbox, .radio {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.25;
+    position: relative;
+}
+.checkbox input, .radio input {
+    cursor: pointer;
+}
+input[type=checkbox], input[type=radio] {
+    vertical-align: baseline;
+    float: left;
+}
+
+/* Login img */
+.avatar {
+    margin-top: 40px;
+    margin-right: 3px;
+}
+.avatar img {
+    background: #fff;
+    border-radius: 50%;
+    height: auto;
+    max-width: 30%
 }

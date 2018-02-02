@@ -74,10 +74,24 @@
  </div>
 
  <div class="cont_form_login">
-    <a href="#" onclick="ocultar_login_sign_up()" ><i class="far fa-times-circle"></i></a>
+    <a href="#" onclick="ocultar_login_sign_up()" ><i class="far fa-times-circle"></i></a>    
+
+       <div class="avatar">
+           <img src="{{ asset('image/default.png') }}">
+       </div> 
+
     <h2>LOGIN</h2>
     <input type="text" placeholder="Email" />
     <input type="password" placeholder="Password" />
+    
+    <div class="field">
+        <label class="checkbox">
+            <input type="checkbox"> 
+              <h5 style="float: left; color: #757575; padding-left: 4px;">Remember me</h5>
+              <h5 style="float: left; color: #757575; padding-left: 14px;">Forgot password?</h5>
+        </label>
+    </div>
+
     <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
 </div>
 
