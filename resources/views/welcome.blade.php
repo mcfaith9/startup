@@ -1,17 +1,61 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Welcome</div>
+@section('welcom_content')
+<div>
+    <nav>
+        <ul>
+            <li><a href="#about" class="scroll" >About</a></li>
+            <li><a href="#team" class="scroll" >Team</a></li>
+            <li><a href="#gallery" class="scroll" >Gallery</a></li>
+            <li><a href="#testimonials" class="scroll" >Testimonials</a></li>
+            <li><a href="#contact" class="scroll">Contact</a></li>
+            <!-- Authentication Links -->
+            <!-- @if (Auth::guest())
+                <li><a target="_blank" href="{{ url('/login') }}">Login</a></li>
+            @else
+                <li>
+                    <a href="#">
+                        {{ Auth::user()->name }} <span></span>
+                    </a>
 
-                <div class="panel-body">
-                    Your Application's Landing Page.
-                </div>
-            </div>
-        </div>
-    </div>
+                    <ul>
+                        <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                    </ul>
+                </li>
+            @endif -->
+        </ul>
+    </nav>   
 </div>
+
+<div id="about">
+    <section class="about">
+        <h1>About</h1>
+    </section>
+</div>           
+
+<div id="team">    
+    <section class="team">
+        <h1>Team</h1>
+    </section>
+</div>    
+    
+<div id="gallery">
+   <section class="gallery">
+        <h1>Gallery</h1>
+    </section>
+</div>
+
+<div id="testimonials">
+    <section class="testimonials">
+        <h1>Testimonials</h1>
+    </section>
+</div>
+
+<div id="contact">
+    <section class="contact">
+        <h1>Contact</h1>
+    </section>  
+</div> 
+
+    
 @endsection
