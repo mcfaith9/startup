@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Pila Solution</title>
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_nav.css') }}">  
+    <title>Pila Solution</title>   
 
 </head>
 <style>
@@ -18,12 +16,13 @@
         background: url() no-repeat;
         background-position: 50% 50%;
         background-size: cover;
+        background: #1abc9c;
     }
     .intro h1 {
         text-align: center;
         text-transform: uppercase;
         font-size: 7em;
-        color: #FF3;
+        color: #fff;
     }
     /*-- slider-up-arrow --*/
     #toTop {
@@ -62,7 +61,8 @@
     <h1>This is intro</h1>
 </div> 
 
-@yield('welcom_content')
+<link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome.css') }}">
+@yield('welcome_content')
 
     <!-- <script src="{{ asset('js/welcome_js/welcome.js') }}"></script>  -->
     
@@ -80,9 +80,8 @@
                 introEl.slideUp(1000, function() { $(document).off('scroll'); });
             });
         })();
-    </script>    
+    </script>      
     
-    <script src="{{ asset('js/plugins/move-top.js') }}"></script>
     <script src="{{ asset('js/plugins/smothScrolling.js') }}"></script>
     <script src="{{ asset('js/plugins/easing.js') }}"></script> 
     <script>
@@ -94,8 +93,8 @@
             });
         });
     </script>
-
-    <script src="{{ asset('js/smothScrolling.js') }}"></script>
+    
+    <script src="{{ asset('js/plugins/move-top.js') }}"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         /*

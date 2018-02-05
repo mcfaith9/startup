@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('welcom_content')
-<div>
+@section('welcome_content')
+<div style="float: left;">
     <nav>
-        <ul>
+        <ul style="float: right;">
             <li><a href="#about" class="scroll" >About</a></li>
             <li><a href="#team" class="scroll" >Team</a></li>
             <li><a href="#gallery" class="scroll" >Gallery</a></li>
@@ -29,7 +29,7 @@
 
 <div id="about">
     <section class="about">
-        <h1>About</h1>
+        @yield('welcome_button')
     </section>
 </div>           
 
