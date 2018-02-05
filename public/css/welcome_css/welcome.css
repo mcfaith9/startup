@@ -5,51 +5,11 @@
 body {
     font-family: Open Sans, sans-serif;
 }
-
- nav {
-   position: fixed;
-   float: left;
-   top: 0;
-   left: 0;
-   width: 100%;
-   text-align: center;
-   margin-top: 220px;
-
-}
- nav ul li {
-    list-style: none;  
-    margin-right: 15px;  
-    margin-bottom: 25px;    
-}
- nav ul li a {
-    width: 12px;
-    height: 12px;
-    display: block;
-    background: #fff;
-    cursor: pointer;    
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-radius: 50%;
-    box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
-    padding: 4px;
-    transition: background-color 0.4s ease;
-    /*Text*/
-    text-indent: -130px;
-    text-decoration: none;   
-    color: #000; 
-}
- nav ul li a:hover{
-    background: #e67e22; cursor: pointer; 
-}
- nav ul li a.active{
-    background: #DC6226; background: #DC6226; cursor: default; 
-}
- section {
+section {
     padding: 30% 0;
     text-align: center;
 }
-section.about { 
+section.control { 
   height: 100vh;
   width: 100%;
   background-image: url(parallax_image/wp2.jpg);

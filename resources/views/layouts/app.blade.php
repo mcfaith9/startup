@@ -61,8 +61,15 @@
     <h1>This is intro</h1>
 </div> 
 
+<link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_normalize.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_component2.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_button.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome.css') }}">
 @yield('welcome_content')
+
+<script src="{{ asset('js/welcome_js/welcome_menu.js') }}"></script> 
+<script src="{{ asset('js/welcome_js/welcome_polyfills.js') }}"></script> 
+<script src="{{ asset('js/plugins/modernizr-2.6.2.min.js') }}"></script> 
 
     <!-- <script src="{{ asset('js/welcome_js/welcome.js') }}"></script>  -->
     
