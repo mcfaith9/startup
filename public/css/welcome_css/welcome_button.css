@@ -19,14 +19,15 @@ p#subheader{
 }
 
 header{
-	margin: auto auto;
-	width:1020px;
-	height:200px;
+	margin: -170px auto;
+	width:1200px;
+	height:230px;
+	background-color: red;
 }
 
 div.container{
-	width: 170px;
-	height: 200px;
+	width: 200px;
+	height: 230px;
 	float:left;
 	-webkit-transition: height .4s;
 }

@@ -1,16 +1,17 @@
 @extends('layouts.app')
 
 @section('welcome_content')
+
 <div class="component">
                 <!-- Start Nav Structure -->
                 <button class="cn-button" id="cn-button">+</button>
                 <div class="cn-wrapper" id="cn-wrapper">
                     <ul>
-                      <li><a href="#control" class="scroll"><span class="icon-picture"></span></a></li>
-                      <li><a href="#team" class="scroll"><span class="icon-headphones"></span></a></li>
-                      <li><a href="#gallery" class="scroll"><span class="icon-home"></span></a></li>
-                      <li><a href="#testimonials" class="scroll"><span class="icon-facetime-video"></span></a></li>
-                      <li><a href="#contact" class="scroll"><span class="icon-envelope-alt"></span></a></li>
+                      <li><a href="#control" class="scroll"><span class="fa fa-home"></span></a></li>
+                      <li><a href="#team" class="scroll"><span class="fa fa-info"></span></a></li>
+                      <li><a href="#gallery" class="scroll"><span class="fa fa-location-arrow"></span></a></li>
+                      <li><a href="#testimonials" class="scroll"><span class="fa fa-connectdevelop"></span></a></li>
+                      <li><a href="#contact" class="scroll"><span class="fa fa-address-book""></span></a></li>
                       <!-- Authentication Links -->
                       <!-- @if (Auth::guest())
                           <li><a target="_blank" href="{{ url('/login') }}">Login</a></li>
