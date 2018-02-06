@@ -67,7 +67,12 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_button.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome.css') }}">
 
-@yield('welcome_content')
+@include('welcome_pages/welcome_menu')
+@include('welcome_pages/welcome_control')
+@include('welcome_pages/welcome_testimonials')
+@include('welcome_pages/welcome_gallery')
+@include('welcome_pages/welcome_team')
+@include('welcome_pages/welcome_contact')
 
 <script src="{{ asset('js/fontawesome.js') }}"></script>
 <script src="{{ asset('js/welcome_js/welcome_menu.js') }}"></script> 
