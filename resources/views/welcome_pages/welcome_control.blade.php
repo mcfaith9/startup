@@ -3,32 +3,32 @@
         <header>
             
             <div class="container" id="uno">
-                <img class="icon" src="pictures/icon1.png">
+                <img class="icon" src="{{ asset('image/icon/home-icon.png') }}">
                 <p class="text">Home</p>
             </div>
 
             <div class="container" id="dos">
-                <img class="icon" src="pictures/icon2.png">
+                <img class="icon" src="{{ asset('image/icon/pin-icon.png') }}">
                 <p class="text">Location</p>
             </div>
 
             <div class="container" id="tres">
-                <img class="icon" src="pictures/icon3.png">
-                <p class="text">google +</p>
+                <img class="icon" src="{{ asset('image/icon/find-person-icon.png') }}">
+                <p class="text">Search</p>
             </div>
 
             <div class="container" id="cuatro">
-                <img class="icon" src="pictures/icon4.png">
-                <p class="text">apple</p>
+                <img class="icon" src="{{ asset('image/icon/job-icon.png') }}">
+                <p class="text">Work</p>
             </div>
 
             <div class="container" id="cinco">
-                <img class="icon" src="pictures/icon5.png">
-                <p class="text">html 5</p>
+                <img class="icon" src="{{ asset('image/icon/attachment-2-icon.png') }}">
+                <p class="text">File</p>
             </div>
 
             <div class="container" id="seis">
-                <img class="icon" src="pictures/icon6.png">
+                <img class="icon" src="{{ asset('image/icon/login-icon.png') }}">
                 <p class="text">Login</p>
             </div>
 
