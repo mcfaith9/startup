@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +18,7 @@
         background-position: 50% 50%;
         background-size: cover;
         background: #1abc9c;
+        z-index: 99999999;
     }
     .intro h1 {
         text-align: center;
@@ -62,6 +63,12 @@
     <h1>This is intro</h1>
 </div> 
 
+<script src="{{asset('js/3d_map_js/classie.js')}}"></script>
+<script src="{{asset('js/3d_map_js/list.min.js')}}"></script>
+<script src="{{asset('js/3d_map_js/main.js')}}"></script>   
+<script src="{{asset('js/3d_map_js/modernizr-custom.js')}}"></script>
+
+<link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_modal_css/welcome_modal.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_normalize.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_component2.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_button.css') }}">
@@ -78,50 +85,50 @@
 <script src="{{ asset('js/welcome_js/welcome_menu.js') }}"></script> 
 <script src="{{ asset('js/welcome_js/welcome_polyfills.js') }}"></script> 
 <script src="{{ asset('js/plugins/modernizr-2.6.2.min.js') }}"></script> 
+<script src="{{ asset('js/plugins/classie.js') }}"></script> 
+<script src="{{ asset('js/welcome_js/modalEffects.js') }}"></script> 
 
-    <!-- <script src="{{ asset('js/welcome_js/welcome.js') }}"></script>  -->
-    
-    <script src="{{ asset('js/welcome_js/2.1.3_jquery.min.js') }}"></script> 
-    <script type="text/javascript">
-        (function() {
+<script src="{{ asset('js/welcome_js/2.1.3_jquery.min.js') }}"></script> 
+<script type="text/javascript">
+    (function() {
 
-            var windowH = $(window).height(),
-                introEl = $('div.intro'),
-                introHeadingH = introEl.find('h1').height();
+        var windowH = $(window).height(),
+            introEl = $('div.intro'),
+            introHeadingH = introEl.find('h1').height();
 
-            introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
+        introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
 
-            $(document).on('scroll', function() {
-                introEl.slideUp(1000, function() { $(document).off('scroll'); });
-            });
-        })();
-    </script>      
-    
-    <script src="{{ asset('js/plugins/smothScrolling.js') }}"></script>
-    <script src="{{ asset('js/plugins/easing.js') }}"></script> 
-    <script>
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){     
-                event.preventDefault();
-        
-        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-            });
+        $(document).on('scroll', function() {
+            introEl.slideUp(1000, function() { $(document).off('scroll'); });
         });
-    </script>
+    })();
+</script>      
+
+<script src="{{ asset('js/plugins/smothScrolling.js') }}"></script>
+<script src="{{ asset('js/plugins/easing.js') }}"></script> 
+<script>
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
     
-    <script src="{{ asset('js/plugins/move-top.js') }}"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        /*
-        var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear' 
-        };
-        */
-        $().UItoTop({ easingType: 'easeOutQuart' });
+    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
     });
-    </script>
+</script>
+
+<script src="{{ asset('js/plugins/move-top.js') }}"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    /*
+    var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+    };
+    */
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
 </body>
 </html>

@@ -5,19 +5,35 @@
     <title>Lets get started</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/login_register.css') }}"> 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/team_css/team.css') }}"> 
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
     <script src="{{ asset('js/fontawesome.js') }}"></script>   
-    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/bg_video_css/background.css') }}"> -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/slideshow/style_slideshow.css') }}">
 </head>
 
 <style>    
     html {
         overflow-y: hidden;
-    }    
+    }  
+    .content {
+        display:none;
+    }
+
+    .preload {
+        margin:0;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-right: -50%;
+        transform:translate(-50%, -50%);
+    }  
 </style>
 
 <body id="page">
+
+<div class="preload">
+    <img src="{{asset('image/gif/Preloader_5.gif')}}" />
+</div>
+
+<div class="content">
 <!-- Slideshow -->
 <ul class="cb-slideshow">
     <li><span>Image 01</span></li>
@@ -27,18 +43,6 @@
     <li><span>Image 06</span></li>
     <li><span>Image 06</span></li>
 </ul>
-
-<!-- <div class="crossfade">
-  <figure></figure>
-  <figure></figure>
-  <figure></figure>
-  <figure></figure>
-  <figure></figure>
-</div> -->
-
-<!-- <div class="tc-videobackground">
-    <video src="{{ asset('video/reeds.mov') }}" autoplay loop></video>
-</div> -->
 
   <div class="cotn_principal">
     <div class="cont_centrar">
@@ -154,11 +158,20 @@
         <a target="_blank" href="https://web.facebook.com/mcfaith">Team Pila</a>
     </div>
 </div>
+</div>
 
 <script src="{{ asset('js/login_register.js') }}"></script>    
-<script src="{{ asset('js/slideshow_js/modernizr.custom.86080.js') }}"></script> 
+<script src="{{ asset('js/slideshow_js/modernizr.custom.86080.js') }}"></script>
 
-<!-- Credits  -->
+<script src="{{ asset('js/plugins/jquery-1.8.3.js') }}"></script>
+<script>
+    $(function() {
+        $(".preload").fadeOut(7000, function() {
+            $(".content").fadeIn(3500);
+        });
+    });
+</script>    
+
 </body>
 
 </html>
