@@ -66,8 +66,8 @@
             </div>
 
             <div class="container" id="cinco">
-                <img class="icon" src="{{ asset('image/icon/attachment-2-icon.png') }}">
-                <p class="text">File</p>
+                <a href="{{ url('/3d') }}"><img class="icon" src="{{ asset('image/icon/attachment-2-icon.png') }}">
+                <p class="text">File</p></a>
             </div>
 
             <div class="container" id="seis">

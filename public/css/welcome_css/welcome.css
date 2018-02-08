@@ -12,7 +12,7 @@ section {
 section.control { 
   height: 100vh;
   width: 100%;
-  background-image: url(parallax_image/wp3.jpg);
+  background-image: url(parallax_image/wp0.jpg);
   background-size: cover;
   display: table;
   background-attachment: fixed;
@@ -27,7 +27,7 @@ section.team {
   background-color: #e67e22; 
 }
 section.gallery { 
-  background-image: url(parallax_image/wp0.jpg);
+  background-image: url(parallax_image/wp3.jpg);
 }
 section.testimonials { 
   background-color: #2980b9;

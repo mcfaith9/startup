@@ -166,7 +166,7 @@
 <script src="{{ asset('js/plugins/jquery-1.8.3.js') }}"></script>
 <script>
     $(function() {
-        $(".preload").fadeOut(7000, function() {
+        $(".preload").fadeOut(1000, function() {
             $(".content").fadeIn(3500);
         });
     });

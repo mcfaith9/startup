@@ -9,7 +9,30 @@
 		<link rel="stylesheet" type="text/css" href="{{asset('css/3d_css_js/css/style.css')}}" />
 		<script src="{{asset('css/3d_css_js/js/modernizr-custom.js')}}"></script>
 	</head>
+    
+    <style>    
+        html {
+            overflow-y: hidden;
+        }  
+        .content_preload {
+            display:none;
+        }
+
+        .preload {
+            margin:0;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-right: -50%;
+            transform:translate(-50%, -50%);
+        }  
+    </style>
+
 	<body>
+	<div class="preload">
+	    <img src="{{asset('image/gif/Preloader_5.gif')}}" />
+	</div>
+     <div class="content_preload">
 		<svg class="hidden">
 			<defs>
 				<symbol id="icon-pin" viewBox="0 0 200 300">
@@ -209,10 +232,14 @@
 			</defs>
 		</svg>
 		<div class="container">
-			<div class="main">				
+			<div class="main">			
+			<header class="codrops-header">
+						<a class="codrops-icon codrops-icon--prev" href="{{ url('/')}}" title="Previous Demo"><span></span></a>
+						<span style="color: #000;">Go back!</span>
+				</header>	
 				<div class="mall">
 					<div class="surroundings">
-						<img class="surroundings__map" src="img/surroundings.svg" alt="Surroundings"/>
+						<img class="surroundings__map" src="{{asset('css/3d_css_js/img/surroundings.svg')}}" alt="Surroundings"/>
 					</div>
 					<div class="levels">
 						<div class="level level--1" aria-label="Level 1">
@@ -907,10 +934,19 @@
 					<li class="list__item" data-level="3" data-category="4" data-space="3.06"><a href="#" class="list__link">Feel the Grass</a></li>
 				</ul>
 			</aside>
-			<!-- /spaces-list -->
 		</div>
-		<!-- /container -->
+	</div>	
+
 		<script src="{{asset('css/3d_css_js/js/classie.js')}}"></script>
 		<script src="{{asset('css/3d_css_js/js/list.min.js')}}"></script>
 		<script src="{{asset('css/3d_css_js/js/main.js')}}"></script>
+
+		<script src="{{ asset('js/plugins/jquery-1.8.3.js') }}"></script>
+		<script>
+		    $(function() {
+		        $(".preload").fadeOut(1000, function() {
+		            $(".content_preload").fadeIn(3500);
+		        });
+		    });
+		</script> 
 	</body>
