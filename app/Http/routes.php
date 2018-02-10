@@ -18,6 +18,7 @@ Route::get('/3d', function () {
     return view('3d_map.3d');
 });
 
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');

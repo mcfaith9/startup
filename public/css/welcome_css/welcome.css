@@ -1,30 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: Open Sans, sans-serif;
-}
+
 section {
     padding: 30% 0;
     text-align: center;
 }
-section.control { 
+section.map { 
   height: 100vh;
   width: 100%;
-  background-image: url(parallax_image/wp0.jpg);
   background-size: cover;
   display: table;
   background-attachment: fixed;
+  background-image: url(parallax_image/wp5.jpg);
 }
 section.team { 
   height: 100vh;
   width: 100%;
-  background-image: url(parallax_image/wp4.jpg);
   background-size: cover;
   display: table;
   background-attachment: fixed;
-  background-color: #e67e22; 
+  background-color: #e67e22;
+  background-image: url(parallax_image/wp4.jpg); 
 }
 section.gallery { 
   background-image: url(parallax_image/wp3.jpg);
