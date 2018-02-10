@@ -68,21 +68,43 @@
         </div>
         <!-- Contact -->
          <div class="tabscontent__item">       
-            <div class="column">
-                <h3 class="column__title">Our Company</h3>
+            <div class="column" style="margin-left: 14%">
+                <h3 class="column__title">Pila Solutions</h3>
                 <h4 class="column__text">pilasolution@gamil.com</h4>
                 <h4 class="column__text">213123123123122</h4>                
                 <h3 class="column__title">Social Media</h3>
-                <h4 class="column__text">Facebook</h4>
-                <h4 class="column__text">Twitter</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fa-2x fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-2x fab fa-facebook-messenger"></i></a></li>
+                        <li><a href="#"><i class="fa-2x fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-2x fa fa-phone"></i></a></li>
+                    </ul>
+                </nav>                
             </div>            
-
             <div class="column">
             <h3 class="column__title">Contact Us</h3>
+            <h5 class="column__text">Your important</h5>
               @include('welcome_pages/welcome_contact')
             </div>
         </div>
         <button class="btn btn--back"><svg class="icon icon--caret"><use xlink:href="#icon-caret"></use></svg></button>
     </div>
 </main>
+<style>
+    nav {
+        position: fixed;
+    }
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    nav ul li a {
+        display: block;
+        padding: 10px 10px;
+        text-decoration: none;
+        color: #fff;
+        transition: background-color 0.4s ease;
+    }
+</style>
 @endsection

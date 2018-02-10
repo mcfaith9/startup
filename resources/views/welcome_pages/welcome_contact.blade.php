@@ -1,6 +1,8 @@
-<div class="col-md-8 contact-us-left">
-<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"/>
-<input type="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
-<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}"/>Message </textarea>
-<input type="submit" value="Send" >
+<div>
+	<form class="topBefore">
+	  <input id="name" type="text" placeholder="NAME">
+	  <input id="email" type="text" placeholder="E-MAIL">
+	  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+	  <input id="submit" type="submit" value="GO!">  
+	</form>
 </div>

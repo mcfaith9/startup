@@ -1,268 +1,154 @@
-/*--contact style start here--*/
-.contact{
-	   background-color:#FAFAFD;
-	   padding: 2em 0px ;
+/*@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
 }
-.contact-main h3{
-	       font-size:3em;
-	       font-weight:300;
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
 }
-.contact-left h3{
-         font-size:1.3em;
-         font-weight:700;
-         padding:1em 0px;
-          font-family: 'Oswald', sans-serif;
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
 }
-.contact-left h4{
-         font-size:1.3em;
-         font-weight:700;
-         padding:1em 0px;
-          font-family: 'Oswald', sans-serif;
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
 }
-.contact-left h5{
-         font-size:1.2em;
-         font-weight:700;
-         padding:1em 0px;
-          font-family: 'Oswald', sans-serif;
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
 }
-.contact-left p{
-         font-size:1em;
-         font-weight:100;
-          font-family: 'Oswald', sans-serif;
-          margin-bottom:10px;
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
 }
-.contact-left p a{
-	color:deepskyblue;
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
 }
-.contact-left p a:hover{
-	text-decoration:none;
-	color:#777;
-	 transition: all 0.3s ease;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
 }
-.contact-left ul {
-       list-style: none;
-       padding:0px;
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
 }
-.contact-left ul li {
-      padding:7px 0px;
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
 }
-.contact-left ul li a:hover{
-       color:deepskyblue;
-       text-decoration: none;
-        transition: all 0.3s ease;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
 }
-.contact-left input[type="text"] {
-        width: 80%;
-        padding: 12px;
-        font-size: 15px;
-        font-weight: 400;
-        margin-bottom: 10px;
-        outline:none;
-        position:relative;
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
 }
-.contact-left textarea{
-	    width: 80%;
-        height: 8em;
-        padding: 10px;
-        font-size: 15px;
-        font-weight: 400;
-        outline:none;
-        resize:none;
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
 }
-.contact-left input[type="submit"] {
-       padding: 14px 1.5em;
-       font-size: 15px;
-       font-weight: 400;
-       background-color: black;
-       color: #fff;
-       border:none;
-       outline: none;
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
 }
-.contact-left input[type="submit"]:hover{
-	  color:#000;
-	  background-color:deepskyblue;
-   transition: all 0.3s ease;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
 }
-/* media quaries start here--*/
-@media(max-width:1024px){
-.contact-left ul {
-    margin: 0px;
-    padding: 0px;
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
 }
-.contact-main h3 {
-           font-size: 3em;
+
+/*#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}*/
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
 }
-.contact-left h3 {
-          font-size: 1.3em;
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
 }
-}
-@media(max-width:768px){
-.contact {
-    padding: 1em 0px;
-}
-.contact-main {
-            text-align: center;
-}
-.contact-main h3 {
-             font-size: 3em;
-}
-.contact-left h3 {
-            font-size: 1.3em;
-            padding:8px 0px;
-}
-.contact-left h4 {
-       padding: 10px 0px;
-}
-.contact-us-right {
-  padding: 1em 0px;
-  text-align: center;
-}
-.contact-us-left {
-  text-align: center;
-}
-}
-@media(max-width:640px){
-.header{
-         min-height: 430px;
-}
-.caption {
-        width: 95%;
-        height: 97.7%;
-        margin-top: 7px;
-}
-.text {
-       padding-top: 16em;
-}
-.caption.capt {
-         height: 100%;
-         width: 95%;
-         margin-top: 0px;
-}
-.caption.car {
-    height: 100%;
-    width: 95%;
-    margin-top: 0px;
-}
-.caption.cat {
-    height: 100%;
-    width: 96%;
-}
-.text.sma {
-      padding-top: 7em;
-}
-.text.big {
-      padding-top: 35em;
-}
-h1 {
-     font-size: 1.5em;
-}
-.work {
-    padding:3em 0;
-}
-.about {
-    padding: 3em 0px;
-}
-.about-left h3 {
-             font-size: 1.8em;
-} 
-.contact-main h3 {
-            font-size: 2.5em;
-}
-.contact-left h3{
-       font-size:1.3em;
-}
-.about-left span.e {
-          left: 23em;
-          top: 1em;
-}
-}
-@media(max-width:480px){
-.contact-left h5 {
-     font-size: 1.2em;
-}
-.contact-main h3 {
-          font-size:1.8em;
-}
-.contact-left h3 {
-          font-size: 1.2em;
-}
-.contact-left h4 {
-        font-size: 1.2em;
-}
-}
-@media(max-width:320px){
-.contact-main h3 {
-              font-size: 1.3em;
-              margin-top:0px;
-}
-.contact-left h3 {
-           font-size: 1em;
-}
-.contact-left h4 {
-              font-size: 1em;
-}
-.contact-left h5 {
-               font-size: 1em;
-}
-.contact {
-        padding: 1em 0px;
-}
-.contact-left ul li {
-        padding: 2px 0px;
-}
-.contact span.c {
-            display: none;
-}
-input[type="text"] {
-            width: 95%;
-            font-size: 11px;
-}
+
 textarea {
-      width: 95%;
-      height: 10em;
-      font-size: 11px;
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
 }
-.contact-left p {
-         font-size: 0.6em;
-         margin-bottom:5px;s
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
 }
-.contact-left li a {
-          font-size: 10px;
+
+#submit {
+  width: 470px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
 }
-input[type="submit"] {
-            font-size: 10px;
-}
-.contact-us-top h3 {
-  font-size: 1.2em;
-}
-.contact-us {
-  padding: 1em 0px;
-}
-.contact-us-top {
-  padding: 0em 0px 2em 0px;
-}
-.contact-us-left input[type="text"] {
-  width: 98%;
-}
-.contact-us-left textarea {
-  width: 97.5%;
-}
-.contact-us-right h3 {
-  font-size: 1.2em;
-  font-weight: 400;
-  color: #000;
-}
-.contact-us-right p{
-  font-size: 13px;
-  color: #000;
-}
+
+#submit:hover {
+  color: #e2dedb;
 }

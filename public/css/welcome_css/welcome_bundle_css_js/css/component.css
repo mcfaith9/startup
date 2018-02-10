@@ -77,12 +77,11 @@
 
 /* Zeru */
 .tabsnav--zeru {
-    background: #fff;
+    border: none;    
 }
 
 .tabsnav--zeru .tabsnav__item:first-child .tabsnav__bar {
-	background: #5f0b1c;
-	border: none;
+	background: #5f0b1c;	
 }
 
 .tabsnav--zeru .tabsnav__item:nth-child(2) .tabsnav__bar {

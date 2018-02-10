@@ -117,8 +117,7 @@
 			}
 		});
 	}
-
-	menuCtrl.addEventListener('click', toggleTabs);
+	// menuCtrl.addEventListener('click', toggleTabs);
 
 	function toggleTabs() {
 		var state = tnav.toggleVisibility();
