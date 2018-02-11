@@ -165,11 +165,11 @@ a:focus {
 }
 
 .demo-2 .view {
-	margin-left: 150px;
+	margin-left: 10px;
 }
 
 .demo-2 .content {
-	background-image: url(../img/wp1.jpg);
+	background: url(../img/wp3.jpg) no-repeat;
 }
 
 .demo-2 .codrops-header__info::after {

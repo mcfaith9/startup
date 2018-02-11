@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/3d', function () {
     return view('3d_map.3d');
 });
+Route::get('/map', function () {
+    return view('welcome_pages.welcome_map');
+});
 
 
 Route::auth();

@@ -32,15 +32,15 @@
   top: 100%;
   left: 50%;
   z-index: 11;
-  margin-top: 13.75em;
-  margin-left: -2.25em;
+  margin-top: 2.10em;
+  margin-left: 23.7em;
   padding-top: 0em;
   width: 4.5em;
   height: 4.5em;
   border: none;
   border-radius: 50%;
   background: none;
-  background-color: #03a9f4;
+  background-color: #003333;
   color: #fff;
   text-align: center;
   font-weight: 700;
@@ -48,6 +48,7 @@
   text-transform: uppercase;
   cursor: pointer;
   -webkit-backface-visibility: hidden;
+  transform: rotate(-90deg);
 }
 
 .csstransforms .cn-wrapper {
@@ -55,8 +56,8 @@
   top: 100%;
   left: 50%;
   z-index: 10;
-  margin-top: 12em;
-  margin-left: -13.5em;
+  margin-top: -7em;
+  margin-left: 26em;
   width: 27em;
   height: 27em;
   border-radius: 50%;
@@ -71,6 +72,7 @@
   transform: scale(0.1);
   pointer-events: none;
   overflow: hidden;
+  transform: rotate(-90deg);
 }
 
 /*cover to prevent extra space of anchors from being clickable*/
@@ -101,6 +103,7 @@
   -ms-transform: scale(1);
   transform: scale(1);
   pointer-events: auto;
+  transform: rotate(-90deg);
 }
 
 .csstransforms .cn-wrapper li {

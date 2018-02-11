@@ -33,7 +33,7 @@
     <nav class="tabsnav tabsnav--vertical tabsnav--zeru">
         <div class="tabsnav__item">
             <div class="tabsnav__bar"></div>
-            <h3 class="tabsnav__title">Map</h3>
+            <h3 class="tabsnav__title">Contact</h3>
         </div>
         <div class="tabsnav__item">
             <div class="tabsnav__bar"></div>
@@ -45,27 +45,10 @@
         </div>
         <div class="tabsnav__item">
             <div class="tabsnav__bar"></div>
-            <h3 class="tabsnav__title">Contact</h3>
+            <h3 class="tabsnav__title">Map</h3>
         </div>
     </nav>
     <div class="tabscontent">
-        <div class="tabscontent__item">
-           <div class="column">
-              @include('welcome_pages/welcome_map')
-           </div>
-        </div>
-
-        <div class="tabscontent__item">
-           <div class="column">
-           </div>
-        </div>
-
-        <!-- Gallery -->
-        <div class="tabscontent__item">
-           <div class="column">
-               @include('welcome_pages/welcome_gallery')
-           </div>
-        </div>
         <!-- Contact -->
          <div class="tabscontent__item">       
             <div class="column" style="margin-left: 14%">
@@ -88,6 +71,25 @@
               @include('welcome_pages/welcome_contact')
             </div>
         </div>
+   
+        <div class="tabscontent__item">
+           <div class="column">
+              @include('welcome_pages/welcome_about')
+           </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="tabscontent__item">
+           <div class="column">
+               @include('welcome_pages/welcome_gallery')
+           </div>
+        </div>
+
+        <div class="tabscontent__item">
+           <div class="column">
+              @include('welcome_pages/welcome_map')
+           </div>
+        </div>
         <button class="btn btn--back"><svg class="icon icon--caret"><use xlink:href="#icon-caret"></use></svg></button>
     </div>
 </main>
@@ -107,4 +109,23 @@
         transition: background-color 0.4s ease;
     }
 </style>
+
+<script type="text/javascript">
+    
+    (function() {
+        
+        var infoElem = $('.info');
+            
+        infoElem.each(function() {
+            var self = $(this),
+                selfTooltipText = self.data('tooltip-text');
+            if ( selfTooltipText ) $('<span/>', {class: 'tooltip', text: selfTooltipText}).appendTo(self);
+        });
+            
+        
+    })();
+    
+    
+    
+</script>
 @endsection

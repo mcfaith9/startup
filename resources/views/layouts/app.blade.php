@@ -76,12 +76,10 @@
     <img src="{{asset('image/gif/Preloader_5.gif')}}" />
 </div>
 
-<script src="{{asset('js/3d_map_js/classie.js')}}"></script>
-<script src="{{asset('js/3d_map_js/list.min.js')}}"></script>
-<script src="{{asset('js/3d_map_js/main.js')}}"></script>   
-<script src="{{asset('js/3d_map_js/modernizr-custom.js')}}"></script>
-
-<script src="{{asset('welcome_css/welcome_googlemap_css_js/compiled.js')}}"></script>
+    <!-- <script src="{{asset('js/3d_map_js/classie.js')}}"></script>
+    <script src="{{asset('js/3d_map_js/list.min.js')}}"></script>
+    <script src="{{asset('js/3d_map_js/main.js')}}"></script>   
+    <script src="{{asset('js/3d_map_js/modernizr-custom.js')}}"></script> -->
 
 <link rel="stylesheet" type="text/css" href="{{asset('css/welcome_css/welcome_contact.css')}}" />
 
@@ -101,6 +99,15 @@
 <script src="{{asset('css/welcome_css/welcome_bundle_css_js/js/tabsnav.js')}}"></script>
 <script src="{{asset('css/welcome_css/welcome_bundle_css_js/js/demo1.js')}}"></script>
 
+<!-- Map -->
+<script src="{{asset('css/welcome_css/welcome_map_css_js/js/jquery-1.12.4.min.js')}}"></script>
+<script src="{{asset('css/welcome_css/welcome_map_css_js/js/jquery.address.js')}}"></script>
+<!-- <script src="{{asset('css/welcome_css/welcome_map_css_js/js/bootstrap.min.js')}}"></script> -->
+<script src="{{asset('css/welcome_css/welcome_map_css_js/js/maps_lib.js')}}"></script>
+<link href="{{asset('css/welcome_css/welcome_map_css_js/css/bootstrap.min.css')}}"/>
+<link href="{{asset('css/welcome_css/welcome_map_css_js/css/custom.css')}}"/>
+<!-- //Map End here  -->
+
 <script src="{{ asset('js/fontawesome.js') }}"></script>
 <script src="{{ asset('js/welcome_js/welcome_menu.js') }}"></script> 
 <script src="{{ asset('js/welcome_js/welcome_polyfills.js') }}"></script> 
@@ -109,12 +116,12 @@
 <script src="{{ asset('js/welcome_js/modalEffects.js') }}"></script> 
 
 <script src="{{ asset('js/plugins/jquery-1.8.3.js') }}"></script>
-        <script>
-            $(function() {
-                $(".preload").fadeOut(1000, function() {
-                    $(".content_preload").fadeIn(3500);
-                });
-            });
+<script>
+    $(function() {
+        $(".preload").fadeOut(1000, function() {
+            $(".content_preload").fadeIn(3500);
+        });
+    });
 </script>
 <!-- <script src="{{ asset('js/welcome_js/2.1.3_jquery.min.js') }}"></script> 
 <script type="text/javascript">

@@ -48,7 +48,7 @@
 
 .tabsnav--vertical .tabsnav__item {
 	flex: none;
-	width: 65px;
+	width: 53px;
 	height: 100%;
 }
 
@@ -81,27 +81,26 @@
 }
 
 .tabsnav--zeru .tabsnav__item:first-child .tabsnav__bar {
-	background: #5f0b1c;	
+	background: #003333;	
 }
 
 .tabsnav--zeru .tabsnav__item:nth-child(2) .tabsnav__bar {
-	background: #5f0b1c;
+	background: #006666;
 	border: none;
 }
 
 .tabsnav--zeru .tabsnav__item:nth-child(3) .tabsnav__bar {
-	background: #5f0b1c;
+	background: #009999;
 	border: none;
 }
-.tabsnav--zeru .tabsnav__item:nth-child(4	) .tabsnav__bar {
-	background: #5f0b1c;
+.tabsnav--zeru .tabsnav__item:nth-child(4) .tabsnav__bar {
+	background: #00CCCC;
 	border: none;
 }
 
 .tabsnav--zeru .tabsnav__title {
 	color: #fff;
 }
-
 /* Ibai */
 .tabsnav--ibai {
 	top: 50%;
