@@ -100,12 +100,7 @@
 <script src="{{asset('css/welcome_css/welcome_bundle_css_js/js/demo1.js')}}"></script>
 
 <!-- Map -->
-<script src="{{asset('css/welcome_css/welcome_map_css_js/js/jquery-1.12.4.min.js')}}"></script>
-<script src="{{asset('css/welcome_css/welcome_map_css_js/js/jquery.address.js')}}"></script>
-<!-- <script src="{{asset('css/welcome_css/welcome_map_css_js/js/bootstrap.min.js')}}"></script> -->
-<script src="{{asset('css/welcome_css/welcome_map_css_js/js/maps_lib.js')}}"></script>
-<link href="{{asset('css/welcome_css/welcome_map_css_js/css/bootstrap.min.css')}}"/>
-<link href="{{asset('css/welcome_css/welcome_map_css_js/css/custom.css')}}"/>
+
 <!-- //Map End here  -->
 
 <script src="{{ asset('js/fontawesome.js') }}"></script>
