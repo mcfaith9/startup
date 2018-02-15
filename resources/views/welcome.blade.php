@@ -24,11 +24,17 @@
         <path d="M14.1,12l7.3,7.3l-2.1,2.1L12,14.1l-7.3,7.3l-2.1-2.1L9.9,12L2.6,4.7l2.1-2.1L12,9.9l7.3-7.3l2.1,2.1L14.1,12z"/>
     </symbol>
 </svg>
-<main class="view">
+<main class="view">   
     <div class="content">
         <div class="deco">
-        @include('welcome_pages/welcome_menu')
+        @include('welcome_pages/welcome_menu') 
         </div>
+
+        <!-- <div class="made-with-love">
+            Made with <i>♥</i> by
+            <a target="_blank" href="https://web.facebook.com/mcfaith">Team Pila</a>       
+               <p>Copyright PilaSolution</p>        
+        </div>  -->     
     </div>
     <nav class="tabsnav tabsnav--vertical tabsnav--zeru">
         <div class="tabsnav__item">
@@ -54,6 +60,7 @@
             <div class="column" style="margin-left: 14%">
                 <h3 class="column__title">Pila Solutions</h3>
                 <h4 class="column__text">pilasolution@gamil.com</h4>
+                <h4 class="column__text">City of Naga, Cebu 6037</h4>
                 <h4 class="column__text">213123123123122</h4>                
                 <h3 class="column__title">Social Media</h3>
                 <nav>
@@ -108,24 +115,46 @@
         color: #fff;
         transition: background-color 0.4s ease;
     }
+
+    .extra-info{
+        position:  absolute;
+        margin-top: 630px;
+        margin-left: 88%;        
+    }
+    .extra-info p{
+        color: #fff;
+    }
+
+    .made-with-love {
+        margin-top: 610px;
+        padding: 10px;
+        clear: left;
+        text-align: center;
+        font-size: 12px;
+        font-family: arial;
+        color: #fff;
+    }
+    .made-with-love i {
+        font-style: normal;
+        color: #F50057;
+        font-size: 18px;
+        position: relative;
+        top: 2px;
+    }
+    .made-with-love a {
+        color: #fff;
+        text-decoration: none;
+    }
 </style>
 
-<script type="text/javascript">
-    
-    (function() {
-        
-        var infoElem = $('.info');
-            
+<script type="text/javascript">    
+    (function() {        
+        var infoElem = $('.info');            
         infoElem.each(function() {
             var self = $(this),
                 selfTooltipText = self.data('tooltip-text');
             if ( selfTooltipText ) $('<span/>', {class: 'tooltip', text: selfTooltipText}).appendTo(self);
-        });
-            
-        
-    })();
-    
-    
-    
+        });         
+    })();    
 </script>
 @endsection

@@ -48,7 +48,7 @@
 
 .tabsnav--vertical .tabsnav__item {
 	flex: none;
-	width: 53px;
+	width: 63px;
 	height: 100%;
 }
 
@@ -81,7 +81,8 @@
 }
 
 .tabsnav--zeru .tabsnav__item:first-child .tabsnav__bar {
-	background: #003333;	
+	/*background: url(../img/wp0.jpg) no-repeat;*/		
+	background: #003333;
 }
 
 .tabsnav--zeru .tabsnav__item:nth-child(2) .tabsnav__bar {

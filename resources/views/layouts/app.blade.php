@@ -76,6 +76,10 @@
     <img src="{{asset('image/gif/Preloader_5.gif')}}" />
 </div>
 
+<div class="content_preload">
+    @yield('welcome')
+</div>
+
     <!-- <script src="{{asset('js/3d_map_js/classie.js')}}"></script>
     <script src="{{asset('js/3d_map_js/list.min.js')}}"></script>
     <script src="{{asset('js/3d_map_js/main.js')}}"></script>   
@@ -89,20 +93,16 @@
 
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_modal_css/welcome_modal.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_normalize.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_component2.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_menu.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome.css') }}">
-
-@yield('welcome')
 
 <script src="{{asset('css/welcome_css/welcome_bundle_css_js/js/anime.min.js')}}"></script>
 <script src="{{asset('css/welcome_css/welcome_bundle_css_js/js/enquire.min.js')}}"></script>
 <script src="{{asset('css/welcome_css/welcome_bundle_css_js/js/tabsnav.js')}}"></script>
 <script src="{{asset('css/welcome_css/welcome_bundle_css_js/js/demo1.js')}}"></script>
-
 <!-- Map -->
 
 <!-- //Map End here  -->
-
 <script src="{{ asset('js/fontawesome.js') }}"></script>
 <script src="{{ asset('js/welcome_js/welcome_menu.js') }}"></script> 
 <script src="{{ asset('js/welcome_js/welcome_polyfills.js') }}"></script> 

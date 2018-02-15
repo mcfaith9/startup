@@ -1,4 +1,3 @@
-<div class="map">
 <style>
   #map {
     height: 100%;
@@ -66,7 +65,7 @@
   }
 
 </style>
-
+<div class="mapa">
     <input id="pac-input" class="controls" type="text"
         placeholder="Search Places">
 
@@ -95,7 +94,7 @@
       <input type="radio" name="type" id="changemode-driving">
       <label for="changemode-driving">Driving</label>
     </div>
-
+</div>
 <script>
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -354,4 +353,3 @@ function AutocompleteDirectionsHandler(map) {
       };
 </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJjh8r0qgHTgD1rctiJyfGAZekDRyxWns&libraries=places&callback=initAutocomplete" async defer></script>
-</div>

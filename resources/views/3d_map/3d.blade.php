@@ -235,7 +235,7 @@
 			<div class="main">			
 			<header class="codrops-header">
 						<a class="codrops-icon codrops-icon--prev" href="{{ url('/')}}" title="Previous Demo"><span></span></a>
-						<span style="color: #000;">Go back!</span>
+						<span style="color: #fff;">Go back!</span>
 				</header>	
 				<div class="mall">
 					<div class="surroundings">
