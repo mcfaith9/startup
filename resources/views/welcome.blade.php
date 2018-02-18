@@ -105,11 +105,11 @@
     <nav id="bt-menu" class="bt-menu">
         <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
         <ul>
-            <li><a href="#" class="bt-icon icon-browser">Browser</a></li>
-            <li><a href="#" class="bt-icon icon-email">Email</a></li>
-            <li><a href="#" class="bt-icon icon-bubble">Chat</a></li>
-            <li><a href="#" class="bt-icon icon-calculator">Calculate</a></li>
-            <li><a href="#" class="bt-icon icon-cd">Record</a></li>
+            <li><a href="#" class=""><img src="{{asset('image/icon/home-icon.png')}}"></a></li>
+            <li><a href="#" class=""><img src="{{asset('image/icon/find-person-icon.png')}}"></a></li>
+            <li><a href="#" class=""><img src="{{asset('image/icon/attachment-2-icon.png')}}"></a></li>
+            <li><a href="#" class=""><img src="{{asset('image/icon/pin-icon.png')}}"></a></li>
+            <li><a href="#" class=""><img src="{{asset('image/icon/login-icon.png')}}"></a></li>
         </ul>
         <ul>
             <li><a href="#" class="bt-icon icon-newspaper">News</a></li>
