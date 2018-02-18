@@ -8,46 +8,6 @@
     <script>document.documentElement.className = 'js';</script>
 </head>
 <style>
-    /*body {
-        font-family: 'Lato';
-    }    
-    .intro {
-        background: url() no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-        background: #1abc9c;
-        z-index: 99999999;
-    }
-    .intro h1 {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 7em;
-        color: #fff;
-    }
-    /*-- slider-up-arrow --*/
-    /*#toTop {
-        display: none;
-        text-decoration: none;
-        position: fixed;
-        bottom: 3%;
-        right: 3%;
-        overflow: hidden;
-        width: 32px;
-        height: 32px;
-        border: none;
-        text-indent: 100%;
-        background: url("{{ asset('image/move-up.png') }}") no-repeat 0px 0px;
-    }
-    #toTopHover {
-        width: 32px;
-        height: 32px;
-        display: block;
-        overflow: hidden;
-        float: right;
-        opacity: 0;
-        -moz-opacity: 0;
-        filter: alpha(opacity=0);
-    }*/
     html {
         overflow-y: hidden;
     }  
@@ -70,15 +30,15 @@
     }
 </style>
 
-<body class="demo-2">
-
-<div class="preload">
+<body>
+<!-- <div class="preload">  
     <img src="{{asset('image/gif/Preloader_5.gif')}}" />
 </div>
 
 <div class="content_preload">
-    @yield('welcome')
-</div>
+    
+</div> -->
+@yield('welcome')
 
     <!-- <script src="{{asset('js/3d_map_js/classie.js')}}"></script>
     <script src="{{asset('js/3d_map_js/list.min.js')}}"></script>
