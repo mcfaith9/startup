@@ -17,11 +17,12 @@
 
     .preload {
         margin:0;
-        position:absolute;
+        position: fixed;
         top:50%;
         left:50%;
         margin-right: -50%;
         transform:translate(-50%, -50%);
+        z-index: 999999999999999999999;
     } 
     /*Scroll Style*/
     /* width */
@@ -31,19 +32,13 @@
 </style>
 
 <body>
-<!-- <div class="preload">  
+<div class="preload">  
     <img src="{{asset('image/gif/Preloader_5.gif')}}" />
 </div>
 
 <div class="content_preload">
-    
-</div> -->
-@yield('welcome')
-
-    <!-- <script src="{{asset('js/3d_map_js/classie.js')}}"></script>
-    <script src="{{asset('js/3d_map_js/list.min.js')}}"></script>
-    <script src="{{asset('js/3d_map_js/main.js')}}"></script>   
-    <script src="{{asset('js/3d_map_js/modernizr-custom.js')}}"></script> -->
+    @yield('welcome')
+</div>
 
 <link rel="stylesheet" type="text/css" href="{{asset('css/welcome_css/welcome_contact.css')}}" />
 
@@ -74,51 +69,10 @@
 <script>
     $(function() {
         $(".preload").fadeOut(1000, function() {
-            $(".content_preload").fadeIn(3500);
-        });
-    });
-</script>
-<!-- <script src="{{ asset('js/welcome_js/2.1.3_jquery.min.js') }}"></script> 
-<script type="text/javascript">
-    (function() {
-
-        var windowH = $(window).height(),
-            introEl = $('div.intro'),
-            introHeadingH = introEl.find('h1').height();
-
-        introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
-
-        $(document).on('scroll', function() {
-            introEl.slideUp(1000, function() { $(document).off('scroll'); });
-        });
-    })();
-</script>      
-
-<script src="{{ asset('js/plugins/smothScrolling.js') }}"></script>
-<script src="{{ asset('js/plugins/easing.js') }}"></script> 
-<script>
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){     
-            event.preventDefault();
-    
-    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            $(".content_preload").fadeIn(1000);
         });
     });
 </script>
 
-<script src="{{ asset('js/plugins/move-top.js') }}"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    /*
-    var defaults = {
-        containerID: 'toTop', // fading element id
-        containerHoverID: 'toTopHover', // fading element hover id
-        scrollSpeed: 1200,
-        easingType: 'linear' 
-    };
-    */
-    $().UItoTop({ easingType: 'easeOutQuart' });
-});
-</script> -->
 </body>
 </html>
