@@ -40,6 +40,8 @@
     @yield('welcome')
 </div>
 
+<link rel="stylesheet" type="text/css" href="{{asset('css/welcome_css/welcome_searchbar.css')}}" />
+
 <link rel="stylesheet" type="text/css" href="{{asset('css/welcome_css/welcome_contact.css')}}" />
 
 <link rel="stylesheet" type="text/css" href="{{asset('css/welcome_css/welcome_bundle_css_js/css/normalize.css')}}" />

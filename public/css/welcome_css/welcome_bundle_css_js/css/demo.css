@@ -41,7 +41,7 @@ a:focus {
 
 .view {
 	position: relative;
-	display: flex;
+	/*display: flex;*/
 	justify-content: flex-end;
 	overflow: hidden;
 	height: 100vh;
