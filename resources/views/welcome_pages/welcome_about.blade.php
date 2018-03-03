@@ -108,7 +108,7 @@
         <div class="content-box">
             <div class="active-content">
                 <div class="home-page content-wrapper">
-                    <p>Hello, my name is John. On this website you can learn all <a href="#" class="btnInline nav-btn" data-target-class="about-page">about me</a> and my <a href="#" class="btnInline nav-btn" data-target-class="projects-page">recent projects</a>. You can also <a href="#" class="btnInline nav-btn" data-target-class="contact-page">contact me</a>, using various channels of communication.</p>
+                    <p>Hello, we are Team Pila. On this website you can learn all <a href="#" class="btnInline nav-btn" data-target-class="about-page">about me</a> and my <a href="#" class="btnInline nav-btn" data-target-class="projects-page">recent projects</a>. You can also <a href="#" class="btnInline nav-btn" data-target-class="contact-page">contact me</a>, using various channels of communication.</p>
                 </div> <!-- end of home page -->
             </div> <!-- end of active content -->                
             <div class="page-transition-overlay"></div>
