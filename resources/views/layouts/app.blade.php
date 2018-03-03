@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pila Solution</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Pila Solution</title>   
+       
     <script>document.documentElement.className = 'js';</script>
 </head>
 <style>
@@ -50,7 +52,6 @@
 
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_modal_css/welcome_modal.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_normalize.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome_menu.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome_css/welcome.css') }}">
 
 <script src="{{asset('css/welcome_css/welcome_bundle_css_js/js/anime.min.js')}}"></script>
@@ -61,7 +62,6 @@
 
 <!-- //Map End here  -->
 <script src="{{ asset('js/fontawesome.js') }}"></script>
-<script src="{{ asset('js/welcome_js/welcome_menu.js') }}"></script> 
 <script src="{{ asset('js/welcome_js/welcome_polyfills.js') }}"></script> 
 <script src="{{ asset('js/plugins/modernizr-2.6.2.min.js') }}"></script> 
 <script src="{{ asset('js/plugins/classie.js') }}"></script> 

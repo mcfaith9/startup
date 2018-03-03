@@ -35,9 +35,16 @@
 
     <main class="view">      
         <div class="">
-            <div class="deco">
-                @include('welcome_pages/pricing') 
-            </div>            
+            <div class="deco">                
+            </div> 
+            <header class="codrops-header">
+                <div class="codrops-links">
+                    <button class="btn btn--menu">
+						    <svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
+						    <svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg>
+					</button>                    
+                </div>
+            </header>          
         </div>
         <nav class="tabsnav tabsnav--vertical tabsnav--zeru">
             <div class="tabsnav__item">

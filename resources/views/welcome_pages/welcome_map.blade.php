@@ -1,6 +1,7 @@
 <style>
   #map {
     height: 100%;
+    width: 100%;
   }
   .controls {
     background-color: #fff;
@@ -54,7 +55,7 @@
   #mode-selector {
     color: #fff;
     background-color: #4d90fe;
-    margin-left: 12px;
+    margin-left: 17px;
     padding: 5px 11px 0px 11px;
   }
 
@@ -66,23 +67,22 @@
 
 </style>
 <div class="mapa">
+  <div id="map"></div>
     <input id="pac-input" class="controls" type="text"
-        placeholder="Search Places">
+        placeholder="Search Places"/>    
 
-    <div id="map"></div>
-
-    <div id="infowindow-content">
+    <!-- <div id="infowindow-content">
 
       <span id="place-name"  class="title"></span><br>
       Place ID <span id="place-id"></span><br>
       <span id="place-address"></span>
     </div>
-
+ -->
     <input id="origin-input" class="controls" type="text"
-        placeholder="Enter an origin location">
+        placeholder="Enter an origin location"/>
 
     <input id="destination-input" class="controls" type="text"
-        placeholder="Enter a destination location">
+        placeholder="Enter a destination location"/>
 
     <div id="mode-selector" class="controls">
       <input type="radio" name="type" id="changemode-walking" checked="checked">
