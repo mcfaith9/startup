@@ -70,7 +70,7 @@
 <script src="{{ asset('js/plugins/jquery-1.8.3.js') }}"></script>
 <script>
     $(function() {
-        $(".preload").fadeOut(1000, function() {
+        $(".preload").fadeOut(1001, function() {
             $(".content_preload").fadeIn(1000);
         });
     });
