@@ -119,7 +119,7 @@
     <div class="hidden-content">
         <div class="about-page content-wrapper">
             <p>So we are <a href="#" class="btnInline"> Team Pila </a>, first and foremost we are compose of three persona namely: McFaith, Stephen and Macky, we are the developer of this site. It was our passion for several years and until now.</p>
-            <p>McFaith came from City of Naga, Cebu, which is in the Philippines while Stephen and Macky came from Minglanilla, Cebu which is also in the Philippines. We collaborate our ideas like to create something beautiful looking and helpful to the community, using each imagination. We prefer functionality over estetics, when it comes to software design.</p>
+            <p>McFaith came from City of Naga, Cebu, which is in the Philippines while Stephen and Macky came from Minglanilla, Cebu which is also in the Philippines. We collaborate our ideas like to create something beautiful looking and may helpful to the community, using each skills and imagination. We prefer functionality over estetics, when it comes to software design.</p>
             <p>Other things that we keep close to our heart is playing internet games like "dota2, ros", break dancing in which McFaith loves to do and playing basketball.</p>
             <p>Now that you know something about us, you can view our <a href="#" class="btnInline nav-btn" data-target-class="projects-page">recent projects</a>, <a href="#" class="btnInline nav-btn" data-target-class="contact-page">contact me</a> or return to <a href="#" class="btnInline nav-btn" data-target-class="home-page">home page</a>.</p>
         </div> <!-- end of about page -->
@@ -128,7 +128,7 @@
             <p>Here you will find our most recent projects.</p>
             <p>Our last project was <a href="#" class="btnInline">Epets website</a>. We tried to get the main message and purpose of the site is selling pet food and accessories while using light background colors and bold font with dark colors.</p>
             <p>The other project i want to tell you about is <a href="#" class="btnInline">Questionaire System</a>. This system automate a questionaire given by a teacher to the student, so it is not surprising that the main color is pink. I also used a lot of images in this app, because it keeps the desing balanced.</p>
-            <p>And the last project is <a href="#" class="btnInline">School website</a>. Because it is an institution, we had to keep the desing professional. We used dark, bold colors and kept saturated colors to minimum in this desing.</p>
+            <p>And the last project is <a href="#" class="btnInline">PAP School website</a>. Because it is an institution, we had to keep the desing professional. We used dark, bold colors and kept saturated colors to minimum in this desing.</p>
             <p>If you like our work and are interested in working with us, why won't you <a href="#" class="btnInline nav-btn" data-target-class="contact-page">contact us</a>. You can also return to <a href="#" class="btnInline nav-btn" data-target-class="home-page">home page</a>.</p>
         </div> <!-- end of projects page -->
         
